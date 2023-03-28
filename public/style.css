@@ -142,6 +142,7 @@ nav ul li a:hover::after {
   font-size: 55px;
   font-weight: 600;
   color: #fff;
+  margin-bottom: 20px;
 }
 
 .tab-titles {
@@ -196,6 +197,9 @@ nav ul li a:hover::after {
 .tab-contents ul li .img-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 600px;
+  gap: 10px;
 }
 
 .tab-contents ul li .img-item {
@@ -203,10 +207,6 @@ nav ul li a:hover::after {
   flex-direction: column;
   text-decoration: none;
   text-align: center;
-}
-
-.tab-contents:hover ul li .img-item {
-  transform: scale((1.1));
 }
 
 .tab-contents ul li .img-item h4 {
@@ -295,7 +295,6 @@ nav ul li a:hover::after {
   border-radius: 50%;
   text-align: center;
 }
-
 
 .work:hover img {
   transform: scale(1.1);
@@ -483,7 +482,54 @@ form .submit {
   display: block;
 }
 
-.swiper {
-  width: 600px;
-  height: 300px;
+.stack-category {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.layer h2 {
+  font-size: var(--body-font-size);
+  margin-bottom: 10px;
+}
+
+.layer p {
+  font-size: var(--body-font-size);
+  margin-bottom: 40px;
+}
+
+.stack-category span {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.stack-category .stack-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 300px;
+  gap: 2px;
+  justify-content: center;
+}
+.stack-category ul li {
+  list-style: none;
+}
+
+.stack-category ul li .stack-item {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  text-align: center;
+}
+
+.stack-category ul li .stack-item h4 {
+  font-size: 0.775rem;
+  font-weight: 300;
+  color: #fff;
+}
+
+.stack-category ul li img {
+  width: auto;
+  height: 60px;
+  margin: 5px 5px;
 }
